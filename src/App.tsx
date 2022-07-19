@@ -16,7 +16,7 @@ function App() {
           <strong>Here comes the music of the future!</strong>
         </p>
         <p id="inner-dialog">
-          <i>Uhm, That should be convincing enough... Perfect!</i>
+          <i>Uhm, that should be convincing enough... Perfect!</i>
         </p>
         <p>Hang on a minute, you actual believed that? HAHA! </p>
         <p>
