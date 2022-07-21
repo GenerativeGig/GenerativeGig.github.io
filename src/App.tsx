@@ -18,7 +18,7 @@ function App() {
         <p id="inner-dialog">
           <i>Uhm, that should be convincing enough... Perfect!</i>
         </p>
-        <p>Hang on a minute, you actual believed that? HAHA! </p>
+        <p>Hang on a minute, you actually believed that? HAHA! </p>
         <p>
           Anyways, you should check out our music. We do like a live techno esq
           thing on some crazy cool equipment. <br></br>Who knows, it might be
