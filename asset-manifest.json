@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/GenerativeGig/static/css/main.54e94ba8.css",
-    "main.js": "/GenerativeGig/static/js/main.24709792.js",
-    "static/js/787.3e87c20c.chunk.js": "/GenerativeGig/static/js/787.3e87c20c.chunk.js",
-    "index.html": "/GenerativeGig/index.html",
-    "main.54e94ba8.css.map": "/GenerativeGig/static/css/main.54e94ba8.css.map",
-    "main.24709792.js.map": "/GenerativeGig/static/js/main.24709792.js.map",
-    "787.3e87c20c.chunk.js.map": "/GenerativeGig/static/js/787.3e87c20c.chunk.js.map"
+    "main.css": "/static/css/main.54e94ba8.css",
+    "main.js": "/static/js/main.1d4cd226.js",
+    "static/js/787.3e87c20c.chunk.js": "/static/js/787.3e87c20c.chunk.js",
+    "index.html": "/index.html",
+    "main.54e94ba8.css.map": "/static/css/main.54e94ba8.css.map",
+    "main.1d4cd226.js.map": "/static/js/main.1d4cd226.js.map",
+    "787.3e87c20c.chunk.js.map": "/static/js/787.3e87c20c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.54e94ba8.css",
-    "static/js/main.24709792.js"
+    "static/js/main.1d4cd226.js"
   ]
 }
