@@ -66,4 +66,4 @@ ChatGPTs answer to this question, 25.05.2023:
 
 ## Challenge
 
-I think the main challenge will be to create something that is pleasing and interesting to listen. The sound is based on real time data and this data can fluctuate in unforeseeable ways. This could lead to weird things that might be great or might not be so great. It will definitely exist a longer testing phase where the algorithm will be tweaked. Through the algorithm I am creating the range in which the drone is able to change. It is not any sound I am looking for, instead a sweet spot of randomness and structure.
+I think the main challenge will be to create something that is pleasing and interesting to listen to. The sound is based on real time data and this data can fluctuate in unforeseeable ways. This could lead to weird things that might be great or might not be so great. It will definitely exist a longer testing phase where the algorithm will be tweaked. Through the algorithm I am creating the range in which the drone is able to change. It is not any specifc sound I am looking for, instead a sweet spot of randomness and structure.
