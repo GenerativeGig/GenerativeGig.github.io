@@ -1,7 +1,3 @@
-Hey there!
-
-Currently building https://generativegig.com, https://opensession.club or making music [here](https://www.youtube.com/channel/UC7nKgwyOW6FkC3HxEnxHxJg).
-
 # The Drone
 
 A constantly evolving drone.
