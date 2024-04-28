@@ -1,9 +1,6 @@
 ### Hello hello!
 
 Welcome to my GitHub page, please take a look around.
-
-Currently working on my portfolio page using vanilla JavaScript, updating my website https://generativegig.com/ and cooking up a new project.
-
 Feel free to reach out if you want to collaborate, ask questions or otherwise.
 
 <!--
