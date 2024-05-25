@@ -8,7 +8,7 @@ Website dedicated to my interests in music.
 
 ## Outline
 
-- Philosophy
+- Philosophy (home, initial page)
   - The name _GenerativeGig_
   - My creative process
   -
