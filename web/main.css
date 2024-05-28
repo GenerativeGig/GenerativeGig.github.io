@@ -194,7 +194,7 @@ main {
   font-size: large;
 }
 
-main > div {
+.content-block {
   display: none;
   max-width: 30em;
   padding: 1em;
@@ -236,4 +236,16 @@ main > div {
 
 #philosophy {
   display: block;
+}
+
+#page-title-container {
+  width: 100%;
+}
+
+#page-title {
+  margin: 0;
+  padding: 0 0 0 1.2em;
+
+  font-size: x-large;
+  text-align: left;
 }
