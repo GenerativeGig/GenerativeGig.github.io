@@ -11,6 +11,7 @@ body {
   color: white;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: x-large;
+  line-height: 1.2em;
 }
 
 .background-img-container {
@@ -20,8 +21,6 @@ body {
 }
 
 .background-image {
-  z-index: -2;
-
   position: absolute;
   top: 0;
   left: 0;
@@ -29,7 +28,7 @@ body {
   height: 100%;
   object-fit: cover;
 
-  animation: animatedBackground 3s ease-in;
+  animation: animatedBackground 2s ease-in;
   animation-fill-mode: forwards;
   animation-iteration-count: 1;
 }
@@ -42,14 +41,14 @@ body {
     filter: blur(0) opacity(0.9);
   }
   100% {
-    filter: blur(4px) opacity(0.6);
+    filter: blur(4px) opacity(0.4);
   }
 }
 
 h1,
 header,
 main {
-  animation: animateText 3s ease-in;
+  animation: animateText 2s ease-in;
   animation-fill-mode: forwards;
   animation-iteration-count: 1;
 }
@@ -71,10 +70,13 @@ main {
 }
 
 header {
+  z-index: 2;
+  position: relative;
+
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1em;
+  padding: 1em 1em 0 1em;
 }
 
 .hamburger {
@@ -110,12 +112,16 @@ header {
     padding: 0;
     margin: 0;
     background-color: black;
-
-    z-index: 2;
   }
 
   .nav-ul {
     flex-direction: column;
+  }
+}
+
+@media (max-width: 400px) {
+  h1 {
+    font-size: xx-large;
   }
 }
 
@@ -158,6 +164,14 @@ header {
   padding: 0.5em;
 }
 
+.nav-li:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+#nav-ul-ul-live-acts {
+  color: white;
+}
+
 #nav-ul-ul-live-acts > .nav-li {
   padding-left: 0.75em;
   padding-right: 1em;
@@ -172,19 +186,48 @@ header {
 }
 
 main {
-  z-index: -1;
-
-  position: relative;
-
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 
   font-size: large;
 }
 
-main div {
+main > div {
   display: none;
+  max-width: 30em;
+  padding: 1em;
+}
+
+.text-link {
+  color: white;
+  background-color: black;
+  padding: 0.2em;
+}
+
+.text-link:hover {
+  color: black;
+  background-color: white;
+}
+
+.img-link {
+  margin: 1em;
+}
+
+@media (max-width: 600px) {
+  .img-link {
+    display: none;
+  }
+}
+
+.small-img {
+  width: 7em;
+  height: 7em;
+}
+
+.row {
+  display: flex;
 }
 
 #philosophy-link {
