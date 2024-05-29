@@ -14,34 +14,32 @@ body {
   line-height: 1.2em;
 }
 
-.background-img-container {
-  position: relative;
-  height: 100vh;
-  overflow: hidden;
-}
-
-.background-image {
-  position: absolute;
+body::before {
+  content: '';
+  position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
 
-  animation: animatedBackground 2s ease-in;
+  background-image: url('generativegig_background.jpg');
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  animation: animatedBackground 3s ease-in;
   animation-fill-mode: forwards;
   animation-iteration-count: 1;
+
+  z-index: -1;
 }
 
 @keyframes animatedBackground {
   0% {
     filter: blur(0) opacity(0.9);
   }
-  33% {
-    filter: blur(0) opacity(0.9);
-  }
   100% {
-    filter: blur(4px) opacity(0.4);
+    filter: blur(8px) opacity(0.3);
   }
 }
 
@@ -55,10 +53,7 @@ main {
 
 @keyframes animateText {
   0% {
-    filter: blur(4px) opacity(0);
-  }
-  20% {
-    filter: blur(4px) opacity(0);
+    filter: blur(8px) opacity(0);
   }
   100% {
     filter: blur(0) opacity(1);
@@ -82,8 +77,24 @@ header {
 .hamburger {
   display: none;
 
-  padding: 0.5em;
+  padding: 1em;
   cursor: pointer;
+
+  font-size: xx-large;
+}
+
+#close-hamburger-menu {
+  display: none;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  padding: 1em;
+  margin: 0.8em 0.8em 0 0;
+  cursor: pointer;
+
+  font-size: xx-large;
 }
 
 .header-content {
@@ -101,15 +112,19 @@ header {
     display: block;
   }
 
+  #close-hamburger-menu {
+    display: block;
+  }
+
   .header-content {
     position: absolute;
     display: none;
     top: 0;
     right: 0;
     display: none;
-    width: 10em;
+    width: 100%;
     white-space: nowrap;
-    padding: 0;
+    padding: 2em 0;
     margin: 0;
     background-color: black;
   }
@@ -154,6 +169,12 @@ header {
   font-size: large;
 }
 
+@media (max-width: 800px) {
+  #nav-ul-ul-live-acts {
+    left: 2em;
+  }
+}
+
 #nav-li-live-acts:hover #nav-ul-ul-live-acts {
   display: block;
 }
@@ -168,8 +189,15 @@ header {
   color: rgba(255, 255, 255, 0.8);
 }
 
+@media (max-width: 800px) {
+  .nav-li {
+    padding: 0.5em 2em;
+  }
+}
+
 #nav-ul-ul-live-acts {
   color: white;
+  border: 1px solid white;
 }
 
 #nav-ul-ul-live-acts > .nav-li {
@@ -201,8 +229,8 @@ main {
 }
 
 .text-link {
-  color: white;
-  background-color: black;
+  color: black;
+  background-color: white;
   padding: 0.2em;
 }
 
@@ -238,13 +266,13 @@ main {
   display: block;
 }
 
-#page-title-container {
+#content-block-title-container {
   width: 100%;
 }
 
-#page-title {
+#content-block-title {
   margin: 0;
-  padding: 0 0 0 1.2em;
+  padding: 0 0 0 1em;
 
   font-size: x-large;
   text-align: left;

@@ -1,3 +1,4 @@
+/** Content block */
 let currentContentBlock = { id: 'philosophy', title: 'Philosophy' };
 
 const navListElements = document.getElementsByClassName('content-block-link');
@@ -63,9 +64,11 @@ function setContentBlock(newContentBlock) {
 
     headerContent.style.display = 'none';
 
-    const titleElement = document.getElementById('page-title');
+    const contentBlockTitleElement = document.getElementById(
+      'content-block-title'
+    );
 
-    titleElement.innerText = currentContentBlock.title;
+    contentBlockTitleElement.innerText = currentContentBlock.title;
   }
 
   const liveActsMenu = document.getElementById('nav-ul-ul-live-acts');
@@ -73,50 +76,56 @@ function setContentBlock(newContentBlock) {
   liveActsMenu.style.display = 'none';
 }
 
-window.addEventListener('load', () => {
-  if (window.innerWidth <= 800) {
-    const titleElement = document.getElementById('page-title');
+/** Toggle live acts menu visibility */
+/** Toggle hamburger menu visibility */
+const liveActsNavButtonElement = document.getElementById('live-acts');
+const liveActsMenu = document.getElementById('nav-ul-ul-live-acts');
 
-    titleElement.innerText = currentContentBlock.title;
+liveActsNavButtonElement.addEventListener('click', () => {
+  if (liveActsMenu.style.display === 'none') {
+    liveActsMenu.style.display = 'block';
+  } else {
+    liveActsMenu.style.display = 'none';
   }
 });
 
 const hamburger = document.querySelector('.hamburger');
 const headerContent = document.querySelector('.header-content');
 
-hamburger.addEventListener('click', (event) => {
+hamburger.addEventListener('click', () => {
   headerContent.style.display = 'flex';
 });
 
-window.addEventListener('click', (event) => {
-  if (
-    window.innerWidth <= 800 &&
-    event.target !== hamburger &&
-    !headerContent.contains(event.target)
-  ) {
-    headerContent.style.display = 'none';
+const closeHamburgerMenuElement = document.getElementById(
+  'close-hamburger-menu'
+);
+
+closeHamburgerMenuElement.addEventListener('click', () => {
+  headerContent.style.display = 'none';
+  liveActsMenu.style.display = 'none';
+});
+
+/** Load: Content block title */
+window.addEventListener('load', () => {
+  if (window.innerWidth <= 800) {
+    const contentBlockTitleElement = document.getElementById(
+      'content-block-title'
+    );
+
+    contentBlockTitleElement.innerText = currentContentBlock.title;
   }
 });
 
+/** Resize: content block title and header content visibility */
 window.addEventListener('resize', function () {
-  const titleElement = document.getElementById('page-title');
+  const contentBlockTitleElement = document.getElementById(
+    'content-block-title'
+  );
 
   if (window.innerWidth >= 801) {
     headerContent.style.display = 'flex';
-    titleElement.innerText = '';
+    contentBlockTitleElement.innerText = '';
   } else {
-    titleElement.innerText = currentContentBlock.title;
-  }
-});
-
-const liveActsNavButtonElement = document.getElementById('live-acts');
-
-liveActsNavButtonElement.addEventListener('click', () => {
-  const liveActsMenu = document.getElementById('nav-ul-ul-live-acts');
-
-  if (liveActsMenu.style.display === 'none') {
-    liveActsMenu.style.display = 'block';
-  } else {
-    liveActsMenu.style.display = 'none';
+    contentBlockTitleElement.innerText = currentContentBlock.title;
   }
 });
