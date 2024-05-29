@@ -116,8 +116,10 @@ window.addEventListener('load', () => {
   }
 });
 
-/** Resize: content block title and header content visibility */
+/** Resize: live acts menu, content block title and header content visibility */
 window.addEventListener('resize', function () {
+  liveActsMenu.style.display = 'none';
+
   const contentBlockTitleElement = document.getElementById(
     'content-block-title'
   );
@@ -126,6 +128,7 @@ window.addEventListener('resize', function () {
     headerContent.style.display = 'flex';
     contentBlockTitleElement.innerText = '';
   } else {
+    headerContent.style.display = 'none';
     contentBlockTitleElement.innerText = currentContentBlock.title;
   }
 });

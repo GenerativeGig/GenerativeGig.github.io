@@ -165,7 +165,8 @@ header {
   margin: 0;
 
   white-space: nowrap;
-  background-color: black;
+  background-color: white;
+  color: black;
   font-size: large;
 }
 
@@ -189,15 +190,14 @@ header {
   color: rgba(255, 255, 255, 0.8);
 }
 
+#nav-li-live-acts .nav-li:hover {
+  color: rgba(0, 0, 0, 0.7);
+}
+
 @media (max-width: 800px) {
   .nav-li {
     padding: 0.5em 2em;
   }
-}
-
-#nav-ul-ul-live-acts {
-  color: white;
-  border: 1px solid white;
 }
 
 #nav-ul-ul-live-acts > .nav-li {
@@ -235,7 +235,7 @@ main {
 }
 
 .text-link:hover {
-  color: black;
+  color: rgba(0, 0, 0, 0.7);
   background-color: white;
 }
 
