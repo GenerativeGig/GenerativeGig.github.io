@@ -1,7 +1,4 @@
-### Hello hello!
-
-Welcome to my GitHub page, please take a look around.
-Feel free to reach out if you want to collaborate, ask questions or otherwise.
+hey, whats up
 
 <!--
 **GenerativeGig/generativegig** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
