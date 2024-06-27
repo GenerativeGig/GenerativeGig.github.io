@@ -31,8 +31,9 @@ function setContentBlock(newContentBlock) {
 
   if (
     currentContentBlock.id === 'generativegig' ||
-    currentContentBlock.id === 'alien-paul-x-generativegig' ||
-    currentContentBlock.id === 'portal-k09'
+    currentContentBlock.id === 'gartenjam' ||
+    currentContentBlock.id === 'portal-k09' ||
+    currentContentBlock.id === 'bunn-and-lundqvist'
   ) {
     const liveActsNavButtonElement = document.getElementById('live-acts');
     liveActsNavButtonElement.style.textDecoration = 'none';
@@ -52,8 +53,9 @@ function setContentBlock(newContentBlock) {
 
   if (
     currentContentBlock.id === 'generativegig' ||
-    currentContentBlock.id === 'alien-paul-x-generativegig' ||
-    currentContentBlock.id === 'portal-k09'
+    currentContentBlock.id === 'gartenjam' ||
+    currentContentBlock.id === 'portal-k09' ||
+    currentContentBlock.id === 'bunn-and-lundqvist'
   ) {
     const liveActsNavButtonElement = document.getElementById('live-acts');
     liveActsNavButtonElement.style.textDecoration = 'overline';
