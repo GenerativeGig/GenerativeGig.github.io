@@ -31,7 +31,7 @@ function setContentBlock(newContentBlock) {
 
   if (
     currentContentBlock.id === 'generativegig' ||
-    currentContentBlock.id === 'gartenjam' ||
+    currentContentBlock.id === 'primatsound' ||
     currentContentBlock.id === 'portal-k09' ||
     currentContentBlock.id === 'bunn-and-lundqvist'
   ) {
@@ -53,7 +53,7 @@ function setContentBlock(newContentBlock) {
 
   if (
     currentContentBlock.id === 'generativegig' ||
-    currentContentBlock.id === 'gartenjam' ||
+    currentContentBlock.id === 'primatsound' ||
     currentContentBlock.id === 'portal-k09' ||
     currentContentBlock.id === 'bunn-and-lundqvist'
   ) {
