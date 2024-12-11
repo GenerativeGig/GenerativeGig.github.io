@@ -1,4 +1,6 @@
-hey, whats up
+Pioneering the next generation of music tools and services to empower artists and listeners alike.
+
+If you share this vision ➡️ Let’s talk
 
 <!--
 **GenerativeGig/generativegig** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
